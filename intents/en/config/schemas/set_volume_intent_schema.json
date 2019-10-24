@@ -1,0 +1,12 @@
+{
+    "name": "set_volume",
+    "templates": [
+        "set the volume to {volume}",
+        "set the volume to {wordvolume} percent"
+    ], 
+    "variables": ["volume", "wordvolume"],
+    "literals": {
+        "volume": "ATHENA.PERCENT",
+        "wordvolume": "ATHENA.WORD_NUMBER"
+    }
+}

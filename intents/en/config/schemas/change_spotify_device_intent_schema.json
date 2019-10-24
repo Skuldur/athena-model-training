@@ -1,0 +1,13 @@
+{
+    "name": "change_spotify_device",
+    "templates": [
+        "switch spotify playback to {device}",
+        "change spotify playback to {device}",
+        "play spotify on {device}",
+        "play spotify on the {device}"
+    ], 
+    "variables": ["device"],
+    "literals": {
+        "device": "ATHENA.FOOD"
+    }
+}

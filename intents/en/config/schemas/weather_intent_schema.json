@@ -1,0 +1,13 @@
+{
+    "name": "weather",
+    "templates": [
+        "What's the forecast for {day}",
+        "What's the weather like in {place}",
+        "How is the weather {day}"
+    ], 
+    "variables": ["day", "place"],
+    "literals": {
+        "day": "ATHENA.LANGUAGES",
+        "place": "ATHENA.CITIES"
+    }
+}

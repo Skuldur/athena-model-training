@@ -1,0 +1,16 @@
+{
+    "name": "increase_volume",
+    "templates": [
+        "increase the volume by {volume}",
+        "increase the volume by {wordvolume} percent",
+        "raise the volume by {volume}", 
+        "raise the volume by {wordvolume} percent", 
+        "turn up the volume by {volume}",
+        "turn up the volume by {wordvolume} percent"
+    ], 
+    "variables": ["volume", "wordvolume"],
+    "literals": {
+        "volume": "ATHENA.PERCENT",
+        "wordvolume": "ATHENA.WORD_NUMBER"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "name": "play",
+    "templates": [
+        "play {song} by {artist}",
+        "play {song}",
+        "play some {playlist}",
+        "play music from {playlist}",
+        "play something from {playlist}",
+        "play something by {artist}",
+        "play music by {artist}"
+    ], 
+    "variables": ["song", "artist", "playlist"],
+    "literals": {
+        "song": "ATHENA.SONG",
+        "artist": "ATHENA.ARTIST",
+        "playlist": "ATHENA.PLAYLIST"
+    }
+}

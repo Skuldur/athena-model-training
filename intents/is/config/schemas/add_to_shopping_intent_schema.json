@@ -1,0 +1,13 @@
+{
+    "language": "is",
+    "name": "add_to_shopping",
+    "templates": [
+        "bættu {ingredient} við á innkaupalistann minn",
+        "bættu við {ingredient} á innkaupalistann minn",
+        "mig vantar {ingredient"
+    ], 
+    "variables": ["ingredient"],
+    "literals": {
+        "ingredient": "ATHENA.FOOD"
+    }
+}

@@ -1,0 +1,4 @@
+nltk
+git+https://github.com/plamere/spotipy.git
+wikipedia
+word2number

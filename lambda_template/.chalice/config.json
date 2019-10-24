@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "app_name": "athena-{intent_name}-lambda",
+  "stages": {
+    "dev": {
+      "api_gateway_stage": "api"
+    }
+  },
+  "lambda_memory_size": 768,
+  "layers": [
+  	"arn:aws:lambda:eu-west-1:347034527139:layer:tf_keras_pillow:1",
+    "arn:aws:lambda:eu-west-1:691273888326:layer:athena-models-layer:4"
+  ],
+  "environment_variables": {
+  	"NLTK_DATA": "./chalicelib/nltk-data/",
+    "AWS_EXECUTION_ENV": "yes"
+  },
+  "manage_iam_role": false,
+  "iam_role_arn": "arn:aws:iam::691273888326:role/athena-lambda-role"
+
+}

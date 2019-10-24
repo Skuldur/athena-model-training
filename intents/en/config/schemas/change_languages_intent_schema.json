@@ -1,0 +1,12 @@
+{
+    "name": "change_languages",
+    "templates": [
+        "switch language to {language}",
+        "switch to {language}",
+        "set language to {language}"
+    ], 
+    "variables": ["language"],
+    "literals": {
+        "language": "ATHENA.LANGUAGES"
+    }
+}

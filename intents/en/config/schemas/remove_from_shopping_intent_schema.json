@@ -1,0 +1,13 @@
+{
+    "name": "remove_from_shopping",
+    "templates": [
+        "remove {ingredient} from my shopping list",
+        "remove {ingredient} and {ingredient} from my shopping list",
+        "delete {ingredient} and {ingredient} from my shopping list",
+        "delete {ingredient} from my shopping list"
+    ], 
+    "variables": ["ingredient"],
+        "literals": {
+        "ingredient": "ATHENA.FOOD"
+    }
+}

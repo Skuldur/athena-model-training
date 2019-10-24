@@ -1,0 +1,11 @@
+{
+    "name": "add_to_shopping",
+    "templates": [
+        "add {ingredient} to my shopping list",
+        "add {ingredient} and {ingredient} to my shopping list"
+    ], 
+    "variables": ["ingredient"],
+    "literals": {
+        "ingredient": "ATHENA.FOOD"
+    }
+}

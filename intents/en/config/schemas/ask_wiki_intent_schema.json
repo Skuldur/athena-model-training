@@ -1,0 +1,13 @@
+{
+    "name": "ask_wiki",
+    "templates": [
+        "What is {item}",
+        "Tell me about {item}",
+        "Tell me something about {item}",
+        "Who is {item}"
+    ], 
+    "variables": ["item"],
+    "literals": {
+        "item": "ATHENA.FOOD"
+    }
+}
