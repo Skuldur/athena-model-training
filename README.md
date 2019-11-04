@@ -12,7 +12,7 @@ pip install -r requirements.txt
 
 To create a new model you need to create an intent schema. `intents/en/config/schemas` contains examples of schemas. Below is a base example of an intent schema
 
-**NB: The name of the schema file should always be `<name>_intent_schema.json` **
+**NB: The name of the schema file should always be** `<name>_intent_schema.json`
 
 ```json
 {
@@ -52,15 +52,20 @@ To create a new model you need to create an intent schema. `intents/en/config/sc
 | ATHENA.LANGUAGES   | Names of languages   | English, Spanish, Icelandic                |
 | ATHENA.CITIES      | Names of cities      | Berlin, Miami, San Francisco               |
 
-Currently we only support using the Athena literal. Future versions will support adding a list of values to the schema instead of the literal name.
+Currently we only support using the Athena literals. Future versions will support adding a list of values to the schema instead of the literal name.
 
 ### No Lambdas
+
+If you're not using Lambdas and just require the model weights and the metadata then you can use
 
 ```bash
 python intent_trainer.py <path-to-schema>
 ```
 
-However you will have to manually update the Intent Classifier 
+The data will get stored in `intents/en/config/`
+
+
+You will then have to manually update the Intent Classifier 
 
 ```bash
 python intent_classifier.py
