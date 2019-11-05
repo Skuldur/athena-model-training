@@ -37,7 +37,7 @@ To create a new model you need to create an intent schema. `intents/en/config/sc
 
 * **Name** refers to the name of the schema. The name of the files generated for this intent will be `<name>_intent_XXXX` 
 * **Templates** is a list of the commands that this intent will handle. Make sure they are specific as if they clash with another intents command then it may cause some confusion for the classifier. To mark which parts of the command will be variables we use `{variable_name}`. In the above example we have three variables: song, artist, and playlist.
-* **Variables** contains a list of all the variables in the schema **NOTE THIS IS LIKELY TO BE DEPRECATED IN A FUTURE VERSION**
+* **Variables** contains a list of all the variables in the schema
 * **Literals** tells the Intent Trainer which words should be used to replace the variable placeholders. The currently supported literals are:
 
 
@@ -83,7 +83,11 @@ This command also creates an updated Intent Classifier weights file that include
 
 ## Model
 
+ADD PICTURES OF THE MODELS
 
+## Future Work
+
+* Remove variables key from schemas, the creator of the schema shouldn't have to write the variables so many times
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
