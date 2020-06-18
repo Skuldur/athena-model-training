@@ -1,0 +1,19 @@
+{
+    "language": "is",
+    "name": "spila",
+    "templates": [
+        "spilaðu {song} eftir {artist}",
+        "spilaðu {song}",
+        "spilaðu tónlist úr {playlist}",
+        "spilaðu tónlist eftir {artist}",
+        "ég vil hlusta á {song}",
+        "ég vil hlusta á {song} eftir {artist}",
+        "ég vil hlusta á eitthvað eftir {artist}"
+    ], 
+    "variables": ["song", "artist", "playlist"],
+    "literals": {
+        "song": "ATHENA.ISK_SONG",
+        "artist": "ATHENA.ISK_ARTIST",
+        "playlist": "ATHENA.ISK_PLAYLIST"
+    }
+}

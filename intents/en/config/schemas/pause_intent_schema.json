@@ -1,0 +1,8 @@
+{
+    "name": "pause",
+    "templates": [
+        "stop",
+        "shut up",
+        "pause"
+    ]
+}

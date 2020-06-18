@@ -34,7 +34,19 @@ LITERALS_MAP = {
     'ATHENA.CITIES': {
         'file': 'cities.literal',
         'sub': ''
-    }
+    },
+    'ATHENA.ISK_SONG': {
+        'file': 'icelandic_songs.literal',
+        'sub': 'song'
+    },
+    'ATHENA.ISK_ARTIST': {
+        'file': 'icelandic_songs.literal',
+        'sub': 'artist'
+    },
+    'ATHENA.ISK_PLAYLIST': {
+        'file': 'icelandic_songs.literal',
+        'sub': 'playlist'
+    },
 }
 
 cwd_path = path.dirname(path.realpath(__file__))
@@ -44,7 +56,7 @@ class LiteralsInterface():
         literal_item = LITERALS_MAP[literal_name]
 
         literal_path = path.join(cwd_path, 'literals', literal_item['file'])
-        with open(literal_path) as f:
+        with open(literal_path, encoding="utf8") as f:
             file_contents = json.load(f)
 
             if literal_item['sub']:
@@ -69,3 +81,14 @@ class LiteralsInterface():
 
     def set(self):
         pass
+
+def get_literals(literals):
+    # If the schema doesn't have variables, don't fetch literals
+    if not literals:
+        return {}
+
+    dataset = {}
+    for key, val in literals.items():
+        dataset[key] = LiteralsInterface(val)
+
+    return dataset

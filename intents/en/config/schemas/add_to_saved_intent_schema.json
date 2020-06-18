@@ -1,0 +1,8 @@
+{
+    "name": "add_to_saved",
+    "templates": [
+        "Add to liked songs",
+        "Save this song",
+        "Add to saved songs"
+    ]
+}

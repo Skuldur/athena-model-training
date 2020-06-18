@@ -2,11 +2,11 @@ import argparse
 import os
 import json
 from distutils.dir_util import copy_tree
-from intent_trainer import IntentTrainer
+from intent_train import train
 from intent_classifier import train as train_classifier
 
 parser = argparse.ArgumentParser(description='Train a new intent')
-parser.add_argument('schema_file', type=str,
+parser.add_argument('--schema_file', '-s', type=str,
                     help='The path to the intent schema')
 
 
@@ -18,12 +18,14 @@ def run(schema_path):
 
         lang = schema.get("language")
         if lang:
-            trainer = IntentTrainer(schema, lang=lang, root_dir=root_dir)
+            train(schema, lang=lang, root_dir=root_dir)
         else:
-            trainer = IntentTrainer(schema, root_dir=root_dir)
-        trainer.train()
+            train(schema, root_dir=root_dir)
 
-        train_classifier()
+        if lang:
+            train_classifier(lang)
+        else:
+            train_classifier()
 
 def create_folder_structure(name):
     if not name:

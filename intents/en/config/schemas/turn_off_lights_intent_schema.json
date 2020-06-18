@@ -1,0 +1,16 @@
+{
+    "name": "turn_off_lights",
+    "templates": [
+        "turn off the lights",
+        "turn off the lights in the {room}",
+        "turn off {room} lights",
+        "turn off {room}",
+        "lights off",
+        "lights off in the {room}",
+        "let night fall"
+    ], 
+    "variables": ["room"],
+    "literals": {
+        "room": "ATHENA.FOOD"
+    }
+}

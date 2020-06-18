@@ -1,0 +1,8 @@
+{
+    "name": "next",
+    "templates": [
+        "next",
+        "skip",
+        "skip this song"
+    ]
+}
